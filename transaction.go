@@ -4,11 +4,6 @@ type Transaction struct {
 	carts []Cart
 }
 
-type Transactioner interface {
-	AddCart()
-	GetTotal()
-}
-
 func (transaction *Transaction) AddCart(cart Cart) {
 	transaction.carts = append(transaction.carts, cart)
 }
